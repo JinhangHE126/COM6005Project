@@ -1,5 +1,9 @@
 # 过去空气质素健康指数记录（英文版）的资料传送规格
 
+[🇬🇧 English Version](./README.md)
+
+[数据集地址](https://data.gov.hk/en-data/dataset/hk-epd-airteam-past-record-of-air-quality-health-index-en/resource/223fd8bd-ab7a-42ca-ab61-554cb903e15d)
+
 ### [字段解释]
 
 | 属性            | 描述                                                            | 备注                 |

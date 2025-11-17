@@ -1,129 +1,173 @@
-# COM 6005 项目指南
+https://data.gov.hk/en-data/dataset/hk-epd-airteam-past-record-of-air-quality-health-index-en/resource/223fd8bd-ab7a-42ca-ab61-554cb903e15d
 
-## 项目概述
+# COM 6005 Project Guideline
 
-**课程：** COM6005 统计建模 (2025-2026 第一学期)  
-**院系：** 计算机科学系  
-**院校：** 香港恒生大学  
-**最大小组人数：** 5 名学生
+## Project Overview
 
-## 重要日期（暂定）
+**Course:** COM6005 Statistical Modelling (2025-2026 Sem 1)  
+**Department:** Department of Computer Science  
+**Institution:** The Hang Seng University of Hong Kong  
+**Maximum Group Size:** 5 students
 
-- **确认小组成员：** 2025 年 9 月 27 日（周六）23:59（第 4 周）
-- **PPT 和封面提交截止：** 2025 年 11 月 22 日（周六）23:59（第 12 周）
-- **演示日：** 2025 年 11 月 29 日（周六，上课时间）（第 13 周）
-- **备用演示日：** 2025 年 12 月 6 日（周六，上课时间）（第 14 周）
-- **个人报告和同行评估提交：** 2025 年 12 月 6 日（周六）23:59（第 14 周）
+## Important Dates (Tentative)
 
-## 项目描述
+- **Confirm Group Members:** 27 Sep 2025 (Sat) 23:59 (Week 4)
+- **PPT & Cover Sheet Submission:** 22 Nov 2025 (Sat) 23:59 (Week 12)
+- **Presentation Day:** 29 Nov 2025 (Sat, lesson time) (Week 13)
+- **Contingency Presentation:** 6 Dec 2025 (Sat, lesson time) (Week 14)
+- **Individual Report & Peer Evaluation:** 06 Dec 2025 (Sat) 23:59 (Week 14)
 
-您是一个跨学科研究团队的成员，负责开发一个数据驱动的统计模型，解决与城市社区相关的热点社会问题。
+## Project Description
 
-### 核心任务
+You are part of an interdisciplinary research team commissioned to develop a data-driven statistical model addressing a topical societal issue relevant to urban communities.
 
-- 确定一个具有有意义社会影响的特定主题，至少与一个联合国可持续发展目标（SDG）相关联
-- 从开放数据平台获取适当的环境数据集
-- 设计详细的项目标题，提供背景环境并阐述明确目标
-- 应用统计建模技术：
-  - 探索性数据分析
-  - 回归模型
-  - 分类
-  - 预测分析
-- 使用 Jupyter 笔记本中的 Python 编程进行：
-  - 数据预处理
-  - 模型构建
-  - 诊断评估
-  - 数据可视化
-- 科学简洁地解释结果，提供可操作的见解
+### Core Tasks
 
-### 主题示例
+- Identify a specific topic with meaningful societal impact aligned with at least one UN Sustainable Development Goal (SDG)
+- Source appropriate environmental datasets from open-data platforms
+- Design detailed project title, provide background context, and formulate clear objectives
+- Apply statistical modeling techniques:
+  - Exploratory data analysis
+  - Regression models
+  - Classification
+  - Predictive analytics
+- Use Python programming in Jupyter notebooks for:
+  - Data preprocessing
+  - Model building
+  - Diagnostic evaluation
+  - Data visualization
+- Interpret results scientifically and provide actionable insights
 
-- 预测城市空气质量指数（SDG 11）
-- 医疗保健获取差异建模（SDG 3）
-- 分析能源消耗模式以应对气候变化（SDG 13）
+### Example Topics
 
-### 推荐数据源
+- Predicting air quality indices (SDG 11)
+- Modeling healthcare access disparities (SDG 3)
+- Analyzing energy consumption patterns (SDG 13)
 
-1. Gov.HK 开放数据：https://data.gov.hk/en/
-2. data.gov（美国）：https://data.gov/
-3. Kaggle 数据集：https://www.kaggle.com/datasets
-4. UCI 机器学习库：https://archive.ics.uci.edu/
-5. Google 数据集搜索：https://datasetsearch.research.google.com/
+### Recommended Data Sources
 
-## 评估标准（总分：100 分）
+1. Open Data on Gov.HK: https://data.gov.hk/en/
+2. data.gov (US): https://data.gov/
+3. Kaggle Datasets: https://www.kaggle.com/datasets
+4. UCI Machine Learning Repository: https://archive.ics.uci.edu/
+5. Google Dataset Search: https://datasetsearch.research.google.com/
 
-### 1. 小组演示（30%）
+## Assessment Criteria (Total: 100 marks)
 
-**要求：**
+### 1. Group Presentation (30%)
 
-- 必须使用英语进行
-- 每组 20 分钟（包括问答环节）
-- 个人评估
-- 在截止日期前向 Moodle 提交演示文件和封面（附件 1）
-- 通过 Microsoft Form 提交主题信息：https://forms.office.com/r/Tyxr1adxBm
+**Requirements:**
 
-### 2. 个人报告（55%）
+- Must be conducted in English
+- 20 minutes per group (including Q&A)
+- Individual assessment
+- Submit presentation file and cover sheet (Annex 1) to Moodle
+- Submit topic information via Microsoft Form: https://forms.office.com/r/Tyxr1adxBm
 
-**要求：**
+### 2. Individual Report (55%)
 
-- 必须使用英语撰写
-- 必需部分：
-  - 封面页
-  - 引言
-  - 方法与结果
-  - 讨论与结论
-  - 参考文献
-  - Veriguide 报告（附在末尾）
+**Requirements:**
 
-**格式规范：**
+- Must be written in English
+- Required sections:
+  - Cover page
+  - Introduction
+  - Methodology and Results
+  - Discussion and Conclusion
+  - References
+  - Veriguide report (attached at end)
 
-- 页数限制：最多 10 页（不包括封面、参考文献、附录和 Veriguide 报告）
-- 页面尺寸：A4
-- 页边距：各边 1 英寸
-- 行距：双倍
-- 字体：Times New Roman，12 磅
-- 以 ZIP 文件提交：`COM6005_pXXXXXX_Report.zip`
+**Format Specifications:**
 
-### 3. 同行评估（15%）
+- Page limit: max. 10 pages (excluding cover page, references, appendix, Veriguide)
+- Page size: A4
+- Margin: 1 inch each side
+- Line spacing: Double
+- Font: Times New Roman, 12 points
+- Submit as ZIP file: `COM6005_pXXXXXX_Report.zip`
 
-**要求：**
+### 3. Peer Evaluation (15%)
 
-- 保密提交给课程讲师
-- 说明个人贡献
-- 对其他成员评分（0-10 分）并提供评论
-- 小组必须在他组演示期间提出至少一个问题
-- 提交为：`COM6005_L02_GYY_PeerEvaluation_pXXXXXX.pdf`
+**Requirements:**
 
-## 提交指南
+- Submit confidentially to module instructor
+- Indicate individual contribution
+- Rate other members (0-10) with comments
+- Groups must ask at least one question during others' presentations
+- Submit as: `COM6005_L02_GYY_PeerEvaluation_pXXXXXX.pdf`
 
-### 项目 1 - 小组演示（2025 年 11 月 22 日）
+## Submission Guide
 
-**组长提交：**
+### Item 1 - Group Presentation (22 Nov 2025)
+
+**Group leader submits:**
 
 - `COM6005_L02_GYY_Presentation.pptx`
-- `COM6005_L02_GYY_Report_GroupCoverSheet.zip`（附件 1）
+- `COM6005_L02_GYY_Report_GroupCoverSheet.zip` (Annex 1)
 
-**每位学生额外：**
+**Each student additionally:**
 
-- 通过 Microsoft Form 提交主题信息
+- Submits topic information via Microsoft Form
 
-### 项目 2 - 个人报告（2025 年 12 月 6 日）
+### Item 2 - Individual Report (06 Dec 2025)
 
-**每位学生提交：** `COM6005_pXXXXXX_Report.zip` 包含：
+**Each student submits:** `COM6005_pXXXXXX_Report.zip` containing:
 
-- 文件夹：`COM6005_pXXXXXX_Code`（数据和 Python 文件，.ipynb 格式）
-- 文件：
+- Folder: `COM6005_pXXXXXX_Code` (data and Python files in .ipynb format)
+- Files:
   - `COM6005_pXXXXXX_WrittenReport.pdf`
   - `COM6005_pXXXXXX_Veriguide_Report.pdf`
-  - `COM6005_pXXXXXX_Report_CoverSheet.pdf`（附件 2）
+  - `COM6005_pXXXXXX_Report_CoverSheet.pdf` (Annex 2)
 
-### 项目 3 - 同行评估（2025 年 12 月 6 日）
+### Item 3 - Peer Evaluation (06 Dec 2025)
 
-**每位学生提交：**
+**Each student submits:**
 
 - `COM6005_L02_GYY_PeerEvaluation_pXXXXXX.pdf`
 
-## 处罚规定
+## Penalties
 
-- **延迟提交：** 相应项目部分得零分
-- **抄袭：** 整个项目得零分 + 纪律处分
+- **Late submission:** Zero marks for respective component
+- **Plagiarism:** Zero marks for entire project + disciplinary action
+
+## Annex 1: Group Presentation Cover Sheet (30%)
+
+| Assessment Criteria           | Marks   |
+| ----------------------------- | ------- |
+| Knowledge of Subject Matter   | /5      |
+| Organization and Accuracy     | /10     |
+| Value of Insights             | /5      |
+| Proficiency of Language       | /5      |
+| Communication Skills          | /3      |
+| Response to Audience Comments | /2      |
+| **Total**                     | **/30** |
+
+## Annex 2: Written Report Cover Sheet (55%)
+
+| Assessment Criteria                 | Marks   |
+| ----------------------------------- | ------- |
+| Introduction                        | /5      |
+| Methodology and Results             | /10     |
+| Discussion and Conclusion           | /15     |
+| Proficiency of Language             | /5      |
+| Structure and Organization          | /5      |
+| Correctness of Program              | /10     |
+| Program Effectiveness               | /2      |
+| Statistical Methods & Visualization | /3      |
+| **Total**                           | **/55** |
+
+## Annex 3: Peer Evaluation Form (15%)
+
+| Component                 | Marks   |
+| ------------------------- | ------- |
+| Contribution & Peer Marks | /10     |
+| Comments on Other Groups  | /5      |
+| **Total**                 | **/15** |
+
+## Detailed Assessment Rubrics
+
+_(Detailed marking schemes for each criterion as shown in pages 8-12 of original document)_
+
+---
+
+_End of Project Guideline_

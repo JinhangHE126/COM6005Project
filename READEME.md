@@ -1,173 +1,124 @@
-https://data.gov.hk/en-data/dataset/hk-epd-airteam-past-record-of-air-quality-health-index-en/resource/223fd8bd-ab7a-42ca-ab61-554cb903e15d
+# Past Air Quality Health Index Record (English Version) Data Transmission Specification
 
-# COM 6005 Project Guideline
+[🌏 中文版本 (Chinese Version)](./README_CN.md)
 
-## Project Overview
+[Dataset Address](https://data.gov.hk/en-data/dataset/hk-epd-airteam-past-record-of-air-quality-health-index-en/resource/223fd8bd-ab7a-42ca-ab61-554cb903e15d)
 
-**Course:** COM6005 Statistical Modelling (2025-2026 Sem 1)  
-**Department:** Department of Computer Science  
-**Institution:** The Hang Seng University of Hong Kong  
-**Maximum Group Size:** 5 students
+### [Field Descriptions]
 
-## Important Dates (Tentative)
+| Attribute       | Description                                                                   | Remarks            |
+| --------------- | ----------------------------------------------------------------------------- | ------------------ |
+| Date            | The publication date of the Air Quality Health Index                          | Format: 16/10/2018 |
+| Hour            | Hour within the day specified by Date; contains the maximum AQHI for that day | Format: 1          |
+| Central/Western | Air Quality Health Index at the Central & Western monitoring station          |                    |
+| Eastern         | Air Quality Health Index at the Eastern monitoring station                    |                    |
+| Kwun Tong       | Air Quality Health Index at the Kwun Tong monitoring station                  |                    |
+| Sham Shui Po    | Air Quality Health Index at the Sham Shui Po monitoring station               |                    |
+| Kwai Chung      | Air Quality Health Index at the Kwai Chung monitoring station                 |                    |
+| Tsuen Wan       | Air Quality Health Index at the Tsuen Wan monitoring station                  |                    |
+| Tseung Kwan O   | Air Quality Health Index at the Tseung Kwan O monitoring station              |                    |
+| Yuen Long       | Air Quality Health Index at the Yuen Long monitoring station                  |                    |
+| Tuen Mun        | Air Quality Health Index at the Tuen Mun monitoring station                   |                    |
+| Tung Chung      | Air Quality Health Index at the Tung Chung monitoring station                 |                    |
+| Tai Po          | Air Quality Health Index at the Tai Po monitoring station                     |                    |
+| Sha Tin         | Air Quality Health Index at the Sha Tin monitoring station                    |                    |
+| Tap Mun         | Air Quality Health Index at the Tap Mun monitoring station                    |                    |
+| Causeway Bay    | Air Quality Health Index at the Causeway Bay monitoring station               |                    |
+| Central         | Air Quality Health Index at the Central monitoring station                    |                    |
+| Mong Kok        | Air Quality Health Index at the Mong Kok monitoring station                   |                    |
 
-- **Confirm Group Members:** 27 Sep 2025 (Sat) 23:59 (Week 4)
-- **PPT & Cover Sheet Submission:** 22 Nov 2025 (Sat) 23:59 (Week 12)
-- **Presentation Day:** 29 Nov 2025 (Sat, lesson time) (Week 13)
-- **Contingency Presentation:** 6 Dec 2025 (Sat, lesson time) (Week 14)
-- **Individual Report & Peer Evaluation:** 06 Dec 2025 (Sat) 23:59 (Week 14)
+## EDA Exploratory Data Analysis
 
-## Project Description
+**Overall Approach**
 
-You are part of an interdisciplinary research team commissioned to develop a data-driven statistical model addressing a topical societal issue relevant to urban communities.
+1. Data Quality Assessment: Check for missing values, duplicate values, and outliers.
+2. Univariate Analysis: Deep dive into understanding each variable.
+3. Multivariate Analysis & Spatiotemporal Analysis: Explore relationships between attributes, and patterns in time and space.
 
-### Core Tasks
+### 1. Data Quality Assessment
 
-- Identify a specific topic with meaningful societal impact aligned with at least one UN Sustainable Development Goal (SDG)
-- Source appropriate environmental datasets from open-data platforms
-- Design detailed project title, provide background context, and formulate clear objectives
-- Apply statistical modeling techniques:
-  - Exploratory data analysis
-  - Regression models
-  - Classification
-  - Predictive analytics
-- Use Python programming in Jupyter notebooks for:
-  - Data preprocessing
-  - Model building
-  - Diagnostic evaluation
-  - Data visualization
-- Interpret results scientifically and provide actionable insights
+- Analysis Content:
+  - Missing Value Analysis
+  - Outlier Detection (Primarily for AQHI values)
+  - Date & Time Format Analysis
 
-### Example Topics
+### 2. Univariate Analysis
 
-- Predicting air quality indices (SDG 11)
-- Modeling healthcare access disparities (SDG 3)
-- Analyzing energy consumption patterns (SDG 13)
+**Understand the distribution and statistical characteristics of each variable individually.**
 
-### Recommended Data Sources
+Attribute: `Date`: Year, Month, Day
+Attribute: `Hour`: Specific hour of the day
 
-1. Open Data on Gov.HK: https://data.gov.hk/en/
-2. data.gov (US): https://data.gov/
-3. Kaggle Datasets: https://www.kaggle.com/datasets
-4. UCI Machine Learning Repository: https://archive.ics.uci.edu/
-5. Google Dataset Search: https://datasetsearch.research.google.com/
+- Hour Range: 01-24
+- Daily Max: The maximum AQHI value for a specific hour within a day.
 
-## Assessment Criteria (Total: 100 marks)
+Attribute: `AQHI`: AQHI values from various monitoring stations (Central/Western, Eastern, Kwun Tong, Sham Shui Po, Kwai Chung, Tsuen Wan, Tseung Kwan O, Yuen Long, Tuen Mun, Tung Chung, Tai Po, Sha Tin, Tap Mun, Causeway Bay, Central, Mong Kok)
 
-### 1. Group Presentation (30%)
+**Core of the Analysis**
 
-**Requirements:**
+Analysis Content:
 
-- Must be conducted in English
-- 20 minutes per group (including Q&A)
-- Individual assessment
-- Submit presentation file and cover sheet (Annex 1) to Moodle
-- Submit topic information via Microsoft Form: https://forms.office.com/r/Tyxr1adxBm
+- Central Tendency & Dispersion: Calculate descriptive statistics for each station: mean, median, mode, standard deviation, variance, range, etc.
+- Distribution Shape: Identify the distribution characteristics of AQHI for each station.
+  - How to Analyze: Use histograms and density plots to visualize the AQHI distribution for each station, identifying skewness and kurtosis.
+  - Box Plots: Identify outliers and the interquartile range (IQR) for each station's AQHI.
 
-### 2. Individual Report (55%)
+### 3. Multivariate Analysis & Spatiotemporal Analysis
 
-**Requirements:**
+**Explore relationships between attributes, and patterns in time and space.**
 
-- Must be written in English
-- Required sections:
-  - Cover page
-  - Introduction
-  - Methodology and Results
-  - Discussion and Conclusion
-  - References
-  - Veriguide report (attached at end)
+Time Series Analysis:
 
-**Format Specifications:**
+- Analysis Content:
+  - Long-term Trends: Aggregate data by `Date` (e.g., calculate daily average AQHI), plot time series charts. Observe overall air quality trends and potential seasonal patterns.
 
-- Page limit: max. 10 pages (excluding cover page, references, appendix, Veriguide)
-- Page size: A4
-- Margin: 1 inch each side
-- Line spacing: Double
-- Font: Times New Roman, 12 points
-- Submit as ZIP file: `COM6005_pXXXXXX_Report.zip`
+Spatial Analysis (Relationships between monitoring stations):
 
-### 3. Peer Evaluation (15%)
+- Analysis Content:
+  - Correlation Analysis: Calculate a correlation coefficient matrix between AQHI values from different monitoring stations. Identify the strength of relationships between stations and visualize using a heatmap. «Heatmap: Use a heatmap to visualize correlations between AQHI values from different monitoring stations.»
+    - Purpose: Identify which areas have highly consistent air quality patterns (high correlation) and which areas are relatively independent. For example: Geographically close stations likely have high correlation.
+  - "Worst" Area Ranking:
+    - Calculate the average AQHI for each monitoring station and rank them to identify areas with the poorest air quality.
+    - Visualization: Use bar charts to display the average AQHI ranking for each station.
 
-**Requirements:**
+## Feature Engineering + Impact Analysis
 
-- Submit confidentially to module instructor
-- Indicate individual contribution
-- Rate other members (0-10) with comments
-- Groups must ask at least one question during others' presentations
-- Submit as: `COM6005_L02_GYY_PeerEvaluation_pXXXXXX.pdf`
+### 1. EDA Report Recap
 
-## Submission Guide
+1. Data Quality Assessment
+   1. Very few missing values (113 total, 0.17% of total data). Tap Mun station has relatively more missing values (5.6% of its data).
+   2. No outliers found outside the theoretical range (1-10).
+   3. Using the IQR method, 1401 outliers were detected, accounting for 2.1% of the total data.
+2. Univariate Analysis
+   1. The mean AQHI for each station is roughly between 3-4. The median (~4) is slightly higher than the mean, indicating a slight left skew in the distribution.
+   2. Mean AQHI across stations ranges from 3.447 (Tsuen Wan) to 4.126 (Kwai Chung).
+3. Multivariate Analysis & Spatiotemporal Analysis
+   1. High correlation between stations (average 0.914), especially those geographically close, with the highest correlations around 0.98.
+   2. The lowest correlation is observed with Tap Mun.
+   3. Cluster analysis grouped stations, indicating that geographical location influences air quality.
+   4. Temporal analysis shows AQHI fluctuates throughout the day, peaking around 17:00 and reaching a trough around 08:00. Weekend AQHI is lower than on weekdays.
 
-### Item 1 - Group Presentation (22 Nov 2025)
+### 2. Feature Engineering
 
-**Group leader submits:**
+1. Handle Missing Values
+   - Very few missing values; can use interpolation for imputation.
+2. Temporal Feature Engineering
+   - Extract the following features from the DateTime:
+     - Hour of the day
+     - Time of day (Morning, Afternoon, Evening, Night)
+     - Is Weekend? «Weekends have lower AQHI»
+     - Month «Seasonal effects»
+     - Day of the week (Monday to Sunday)
+3. Spatial Feature Engineering
+   - Due to high station correlation, consider using Principal Component Analysis (PCA) or cluster analysis to combine multiple station AQHI values into composite indicators, reducing dimensionality and redundant information.
+   - Based on cluster analysis results, group stations and calculate the average AQHI for each cluster as a new feature.
+4. (Additional feature engineering ideas can be added here if needed)
 
-- `COM6005_L02_GYY_Presentation.pptx`
-- `COM6005_L02_GYY_Report_GroupCoverSheet.zip` (Annex 1)
+### 3. Impact Analysis
 
-**Each student additionally:**
-
-- Submits topic information via Microsoft Form
-
-### Item 2 - Individual Report (06 Dec 2025)
-
-**Each student submits:** `COM6005_pXXXXXX_Report.zip` containing:
-
-- Folder: `COM6005_pXXXXXX_Code` (data and Python files in .ipynb format)
-- Files:
-  - `COM6005_pXXXXXX_WrittenReport.pdf`
-  - `COM6005_pXXXXXX_Veriguide_Report.pdf`
-  - `COM6005_pXXXXXX_Report_CoverSheet.pdf` (Annex 2)
-
-### Item 3 - Peer Evaluation (06 Dec 2025)
-
-**Each student submits:**
-
-- `COM6005_L02_GYY_PeerEvaluation_pXXXXXX.pdf`
-
-## Penalties
-
-- **Late submission:** Zero marks for respective component
-- **Plagiarism:** Zero marks for entire project + disciplinary action
-
-## Annex 1: Group Presentation Cover Sheet (30%)
-
-| Assessment Criteria           | Marks   |
-| ----------------------------- | ------- |
-| Knowledge of Subject Matter   | /5      |
-| Organization and Accuracy     | /10     |
-| Value of Insights             | /5      |
-| Proficiency of Language       | /5      |
-| Communication Skills          | /3      |
-| Response to Audience Comments | /2      |
-| **Total**                     | **/30** |
-
-## Annex 2: Written Report Cover Sheet (55%)
-
-| Assessment Criteria                 | Marks   |
-| ----------------------------------- | ------- |
-| Introduction                        | /5      |
-| Methodology and Results             | /10     |
-| Discussion and Conclusion           | /15     |
-| Proficiency of Language             | /5      |
-| Structure and Organization          | /5      |
-| Correctness of Program              | /10     |
-| Program Effectiveness               | /2      |
-| Statistical Methods & Visualization | /3      |
-| **Total**                           | **/55** |
-
-## Annex 3: Peer Evaluation Form (15%)
-
-| Component                 | Marks   |
-| ------------------------- | ------- |
-| Contribution & Peer Marks | /10     |
-| Comments on Other Groups  | /5      |
-| **Total**                 | **/15** |
-
-## Detailed Assessment Rubrics
-
-_(Detailed marking schemes for each criterion as shown in pages 8-12 of original document)_
-
----
-
-_End of Project Guideline_
+1. Feature Importance Analysis:
+   - After training a model, use feature importance scores (e.g., from tree-based models) to evaluate the contribution of new features to model performance.
+2. Temporal Feature Impact:
+   - Analyze the impact of temporal features like hour, weekend, etc., on predictions, verifying if they align with patterns found in EDA (e.g., peak at 17:00, lower values on weekends).
+3. Spatial Feature Impact:
+   - Examine the importance of different station features and the contribution of regional features (PCA or cluster results) to the model.
